@@ -26,4 +26,13 @@ public class Matriz {
 	public int GetTotalColumnas() {
 		return matriz.get(0).size();
 	}
+	
+	public void agregarFila (ArrayList<Integer> fila){
+		matriz.add(fila);
+	}
+	
+	public void agregarElemento (int fila, int columna, int elemento){
+		ArrayList<Integer> filas = matriz.get(fila);
+		filas.add(elemento);
+	}
 }
