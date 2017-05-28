@@ -10,13 +10,16 @@ public class CuboMagicoTest {
 	public void testGenerar() {
 		LeerArchivo leerArchivo = new LeerArchivo();
 		Impresion impresion = new Impresion();
-		String file = (leerArchivo.getClass().getResource("") + "file1.txt").replace("file:/", "");
+		String file = (leerArchivo.getClass().getResource("") + "matriz5.txt").replace("file:/", "");
 
 		CuboMagico cuboMagico = new CuboMagico();
-		
-		impresion.ImprimirMatriz(cuboMagico.generar(5).getMatriz());
+		Matriz matrizCubo = cuboMagico.generar(5);
+		impresion.ImprimirMatriz(matrizCubo.getMatriz());
+		Matriz matriz = leerArchivo.matriz(file);
 
-		assertEquals(leerArchivo.matriz(file), cuboMagico.generar(5));
+		for(int i=0; i<matrizCubo.getMatriz().size(); i++){
+			assertEquals(matriz.getMatriz().get(i), matrizCubo.getMatriz().get(i));
+		}
 	}
 
 }
