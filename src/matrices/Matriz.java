@@ -18,4 +18,12 @@ public class Matriz {
 		Integer valor = filas.get(columna);
 		return valor;
 	}
+	
+	public int GetTotalFilas() {
+		return matriz.size();
+	}
+	
+	public int GetTotalColumnas() {
+		return matriz.get(0).size();
+	}
 }

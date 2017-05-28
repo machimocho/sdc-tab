@@ -7,6 +7,6 @@ public class CalculoMatriz {
 	}
 	
 	public boolean EsValidoMultiplicar(Matriz a, Matriz b) {
-		return false;
+		return a.GetTotalColumnas() == b.GetTotalFilas();
 	}
 }
