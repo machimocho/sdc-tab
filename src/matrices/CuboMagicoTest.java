@@ -14,9 +14,9 @@ public class CuboMagicoTest {
 
 		CuboMagico cuboMagico = new CuboMagico();
 		
-		impresion.ImprimirMatriz(cuboMagico.generar(3).getMatriz());
+		impresion.ImprimirMatriz(cuboMagico.generar(5).getMatriz());
 
-		assertEquals(leerArchivo.matriz(file), cuboMagico.generar(3));
+		assertEquals(leerArchivo.matriz(file), cuboMagico.generar(5));
 	}
 
 }
