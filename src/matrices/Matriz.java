@@ -11,5 +11,9 @@ public class Matriz {
 
 	public void setMatriz(ArrayList<ArrayList<Integer>> matriz) {
 		this.matriz = matriz;
-	} 
+	}
+	
+	public Integer ObtenerItem(int fila, int columna) {
+		return 0;
+	}
 }
