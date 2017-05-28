@@ -8,9 +8,11 @@ public class MatrizTest {
 
 	@Test
 	public void testMatriz() {
-
+		
 		LeerArchivo leerArchivo = new LeerArchivo();
-		assertEquals(new Matriz(), leerArchivo.matriz(this.getClass().getResource("file1.txt").toString()));
+		
+		String file = (leerArchivo.getClass().getResource("") + "file1.txt").replace("file:/", "");
+		assertEquals(new Matriz(), leerArchivo.matriz(file));
 	}
 
 }
