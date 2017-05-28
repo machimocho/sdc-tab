@@ -21,7 +21,7 @@ public class Impresion {
 		int longitudNumero = numeroCadena.length();
 		
 		for (int i = longitudNumero; i < 10; i++){
-			cadena += "_";
+			cadena += " ";
 		}
 		 
 		return cadena + numeroCadena;
