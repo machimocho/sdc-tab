@@ -14,6 +14,8 @@ public class Matriz {
 	}
 	
 	public Integer ObtenerItem(int fila, int columna) {
-		return 0;
+		ArrayList<Integer> filas = matriz.get(fila);
+		Integer valor = filas.get(columna);
+		return valor;
 	}
 }
